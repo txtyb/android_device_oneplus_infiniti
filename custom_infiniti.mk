@@ -11,19 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from infiniti device
 $(call inherit-product, device/oneplus/infiniti/device.mk)
 
-# Inherit some common evolution stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_infiniti
+PRODUCT_NAME := custom_infiniti
 PRODUCT_DEVICE := infiniti
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := CPH2745
-
-EVO_BUILD_TYPE := Unofficial
-
-TARGET_DISABLE_EPPE := true
-TARGET_HAS_UDFPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
